@@ -1,4 +1,5 @@
 import funkcje
+import pytest
 
 def test_produkt():
     assert funkcje.product(2, 2) == 4
@@ -15,6 +16,15 @@ def test_kwa():
     assert funkcje.kwa(12) == 144
     assert funkcje.kwa(3.5) == 12.25
 
-test_produkt()
-test_add()
-test_kwa()
+def test_circle_area():
+    assert funkcje.circle_area(1) == funkcje.math.pi
+    assert funkcje.circle_area(0) == 0
+    assert funkcje.circle_area(2.1) == funkcje.math.pi* (2.1**2)
+
+def test_value():
+    with pytest.raises(ValueError):
+        funkcje.circle_area(-2)
+
+def test_type():
+    with pytest.raises(TypeError):
+        funkcje.circle_area("asa")

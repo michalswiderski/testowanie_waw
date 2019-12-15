@@ -1,6 +1,6 @@
-import math
-
-
+# import math
+#
+#
 # def circle_area(r):
 #     if type(r) not in [int, float]:
 #         return "Podałeś nieprawidłowy typ. Podaj liczbę."
@@ -19,17 +19,17 @@ import math
 # print(circle_area("asd"))
 
 
-def circle_area(r):
-    if r < 0:
-        raise Exception("Promień nie może być ujemny")
-    try:
-        return math.pi * r **2
-    except:
-        return "Coś poszło nie tak"
-
-print(circle_area(1))
-print(circle_area(0))
-print(circle_area(-1))
-print(circle_area(2+5j))
-print(circle_area(True))
-print(circle_area("asd"))
+# def circle_area(r):
+#     if r < 0:
+#         raise Exception("Promień nie może być ujemny")
+#     try:
+#         return math.pi * r **2
+#     except:
+#         return "Coś poszło nie tak"
+#
+# print(circle_area(1))
+# print(circle_area(0))
+# print(circle_area(-1))
+# print(circle_area(2+5j))
+# print(circle_area(True))
+# print(circle_area("asd"))
